@@ -54,6 +54,19 @@ function Counter2() {
                     </button>
             </div>
             <div className="ViewButton">
+                <div className="ViewButton2">
+                    <button className="Button" onClick={() => dispatch({ type: 'decrement2', value: 1 })}>
+                        C2 -1
+                    </button>
+                </div>
+                <div className="ViewButton1">
+                    <button className="Button" onClick={() => dispatch({ type: 'increment2', value: 1 })}>
+                        C2 +1
+                    </button>
+                </div>
+            </div>
+            <div>
+                <br />
                 <button className="Button" onClick={() => dispatch({ type: 'reset' })}>
                     Reset All
                 </button>

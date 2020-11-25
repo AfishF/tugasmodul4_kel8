@@ -5,6 +5,7 @@ import Counter from "./learn-useState/Counter";
 import Effect from "./learn-useEffect/Index";
 import Context from "./learn-useContext/Index";
 import Reducer from "./learn-useReducer/Counter2";
+import Callback from "./learn-useCallback/Callback";
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
             <li className="li">
               <Link to="/reducer">Use Reducer</Link>
             </li>
+            <li className="li">
+              <Link to="/callback">Use Callback</Link>
+            </li>
           </ul>
         </nav>
         <Switch>
@@ -31,6 +35,8 @@ function App() {
           <Route path="/effect" exact component={Effect} />
           <Route path="/context" exact component={Context} />
           <Route path="/reducer" exact component={Reducer} />
+          <Route path="/callback" exact component={Callback} />
+
         </Switch>
       </div>
     </Router>
