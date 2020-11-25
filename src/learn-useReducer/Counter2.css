@@ -46,11 +46,11 @@
   }
   
   .Button {
-    height: 60px;
-    width: 200px;
+    height: 50px;
+    width: 225px;
     background-color: rgb(8, 236, 38);
     border-radius: 10px;
-    font-size: 30px;
+    font-size: 25px;
     color: white;
   }
   

@@ -1,4 +1,5 @@
 import React, { useReducer } from 'react'
+import "./Counter2.css";
 
 const initState = {
     firstCounter: 0,
@@ -26,45 +27,33 @@ function Counter2() {
 
     return (
         <div className="Main">
-            <div className="Text">Counter 1 - {count.firstCounter} </div>
-            <div className="Text">Counter 2 - {count.secondCounter} </div>
+            <div className="Text">Counter 1 </div>
+            <div className="Text">{count.firstCounter} </div>
+            <div className="Text">Counter 2</div>
+            <div className="Text">{count.secondCounter} </div>
             <div className="ViewButton">
-                <div className="ViewButton2">
-                    <button className="Button" onClick={() => dispatch({ type: 'decrement', value: 1 })}>
-                        C1 -1
-                    </button>
-                </div>
-                <div className="ViewButton1">
-                    <button className="Button" onClick={() => dispatch({ type: 'increment', value: 1 })}>
-                        C1 +1
-                    </button>
-                </div>
+                <button className="Button" onClick={() => dispatch({ type: 'decrement', value: 5 })}>
+                    Kurang -5
+                </button>
+                <button className="Button" onClick={() => dispatch({ type: 'decrement', value: 1 })}>
+                    Kurang -1
+                </button>
+                <button className="Button" onClick={() => dispatch({ type: 'increment', value: 1 })}>
+                    Tambah +1
+                </button>
+                <button className="Button" onClick={() => dispatch({ type: 'increment', value: 5 })}>
+                    Tambah +5
+                </button>
             </div>
             <div className="ViewButton">
-                <div className="ViewButton2">
-                    <button className="Button" onClick={() => dispatch({ type: 'decrement', value: 5 })}>
-                        C1 -5
+                <button className="Button" onClick={() => dispatch({ type: 'decrement2', value: 1 })}>
+                    Kurang Counter 2
                     </button>
-                </div>
-                <div className="ViewButton1">
-                    <button className="Button" onClick={() => dispatch({ type: 'increment', value: 5 })}>
-                        C1 +5
+                <button className="Button" onClick={() => dispatch({ type: 'increment2', value: 1 })}>
+                    Tambah Counter 2
                     </button>
-                </div>
             </div>
             <div className="ViewButton">
-                <div className="ViewButton2">
-                    <button className="Button" onClick={() => dispatch({ type: 'decrement2', value: 1 })}>
-                        C2 -1
-                    </button>
-                </div>
-                <div className="ViewButton1">
-                    <button className="Button" onClick={() => dispatch({ type: 'increment2', value: 1 })}>
-                        C2 +1
-                    </button>
-                </div>
-            </div>
-            <div>
                 <button className="Button" onClick={() => dispatch({ type: 'reset' })}>
                     Reset All
                 </button>
