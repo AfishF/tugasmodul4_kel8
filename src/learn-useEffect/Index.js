@@ -43,7 +43,7 @@ export default function Index() {
             <p className="Text">Learn useEffect</p>
             <p>Kelompok 8</p>
             <ul>
-                {data.slice(0, 10).map((value) => (
+                {data.slice(0, 15).map((value) => (
                     <li key={value.id}>{value.nama}</li>
                 ))}
             </ul>
