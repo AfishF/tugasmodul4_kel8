@@ -7,7 +7,7 @@ export default function Index() {
 
     //dijalankan 1 kali
     useEffect(() => {
-        fetch("https://jsonplaceholder.typicode.com/todos")
+        fetch("https://backendcatatantugas.herokuapp.com/mahasiswa/all")
             .then((response) => response.json())
             .then((data) => {
                 console.log(data);
@@ -44,7 +44,7 @@ export default function Index() {
             <p>Kelompok 8</p>
             <ul>
                 {data.slice(0, 10).map((value) => (
-                    <li key={value.id}>{value.title}</li>
+                    <li key={value.id}>{value.nama}</li>
                 ))}
             </ul>
 
